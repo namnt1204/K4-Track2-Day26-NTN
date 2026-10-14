@@ -1,5 +1,16 @@
 # agent/ — bản đồ năm file · map of the five files
 
+## Bản bài làm NTN
+
+Gateway đã thực thi ROUTE/ADMIT/AUTHORIZE/BUDGET; các guardrail injection,
+private-data redaction và source-backed arithmetic đã được cài. Prompt đã
+được cập nhật. `answer.py` bổ sung `GuardedEnvironment` để kiểm tra ANSWER
+trước khi environment gửi ra. Cách tích hợp và giới hạn nằm ở [INTEGRATION.md](INTEGRATION.md).
+
+Bảng dưới là bản đồ starter gốc; những dòng gọi guardrail là stub mô tả
+trạng thái ban đầu, không phải trạng thái bản bài làm này. Guardrail không
+thay thế kiểm chứng sự thật; nguồn phải được caller xác minh trust/relevance.
+
 *Bạn sở hữu toàn bộ thư mục này (RULES.md mục 1). Đọc bảng dưới TRƯỚC khi
 sửa bất cứ file nào — nó nói mỗi file quyết định gì, bị chấm ở đâu trong
 trace, và cứu bạn khỏi lớp lỗi nào trong 17 lớp (CONTRACTS.md mục 6.1).*
